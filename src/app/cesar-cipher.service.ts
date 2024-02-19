@@ -4,14 +4,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CesarCipherService {
+
+  //B
   encrypt(text: string, shift: number): string {
     return this.shiftText(text, shift);
   }
-
+  //C
   decrypt(text: string, shift: number): string {
     return this.shiftText(text, -shift);
   }
-
+  //D
   private shiftText(text: string, shift: number): string {
     return text
       .split('')
